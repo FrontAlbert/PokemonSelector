@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+    <title>Pokemon Selector</title>
+    
+</head>
+<body>
+    <header class="wrapper">
+        <h1>Poke&#x301mon <span>Selector</span></h1>
+    </header>
+    
+    <Main class="wrapper">
+        <!-- JavaScript will be adding API data to the following elements creating new ones when required -->
+        <form action="#">
+            <fieldset>
+                <!-- Possible future functionality: Type selector for Pokemon  used to generate a result based on user's preferred typing. -->
+                <!-- <label for="type" class="sr-only">Type</label>
+                <select name="type" id="type">
+                    <option value="" disabled>--Select type--</option>
+                    <option value="normal">Normal</option>
+                    <option value="grass">Grass</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="flying">Flying</option>
+                    <option value="poison">Poison</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="bug">Bug</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="electric">Electric</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ice">Ice</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Dark</option>
+                    <option value="steel">Steel</option>
+                    <option value="fairy">Fairy</option>
+                </select> -->
+                
+                <button class="submit">Generate</button>
+                
+                <label for="pokeSearch" class="pokeSearch sr-only">Search</label>
+                <input type="text" name="pokeSearch" class="pokeSearch" id="pokeSearch" placeholder="Search">
+    
+            </fieldset>
+        </form>
+
+        <section class="pokeData">
+
+            <div class="pokeSprite">
+                <img src="">
+            </div>
+
+            <p class="pokeName">
+                <!-- pokemon name will be generated here -->
+            </p>
+
+            
+            <div class="pokeInfo">
+                <!-- pokemon info will be generated here -->
+            </div>
+
+            <p class="pokeNumber">
+                <!-- pokemon number will be generated here -->
+            </p>
+
+            <p class="pokeHeight">
+                <!-- pokemon height information will be generated here -->
+            </p>
+
+            <p class="pokeWeight">
+                <!-- pokemon weight information will be generated here -->
+            </p>
+            
+        </section>
+    </Main>
+    
+
+    <script src="./script.js"></script>
+    <!-- For Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</body>
+</html>
